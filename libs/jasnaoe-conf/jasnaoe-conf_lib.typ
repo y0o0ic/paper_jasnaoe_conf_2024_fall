@@ -51,7 +51,7 @@
       #set par(first-line-indent: 0pt)
       #let is-ack = it.body in ([謝辞], [謝　辞], [謝　　辞], [Acknowledgement])
       #set align(center)
-      #set text(size: 10pt, font: english, weight: "bold")
+      #set text(size: 10pt, font: mincho, weight: "bold")
       #show regex("[\p{scx:Han}\p{scx:Hira}\p{scx:Kana}]"): set text(size: 10pt, font: gothic) // 日本語のときだけゴシック体に変更
       #show "．": set text(font: gothic)　// 全角ピリオドのときだけゴシック体に変更
       #show "，": set text(font: gothic)　// 全角ピリオドのときだけゴシック体に変更
@@ -65,7 +65,7 @@
     ] else [
       // The other level headings are run-ins.
       #set par(first-line-indent: 0pt)
-      #set text(9pt, weight: "bold", font: english)
+      #set text(9pt, weight: "bold", font: mincho)
       #show regex("[\p{scx:Han}\p{scx:Hira}\p{scx:Kana}]"): set text(size: 10pt, font: gothic) // 日本語のときだけゴシック体に変更
       #show "．": set text(font: gothic)　// 全角ピリオドのときだけゴシック体に変更
       #show "，": set text(font: gothic)　// 全角ピリオドのときだけゴシック体に変更
